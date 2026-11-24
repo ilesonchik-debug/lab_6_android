@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Доступ к интернету -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Main_dd"
+        android:usesCleartextTraffic="true">
+
+        <!-- Главное меню -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Main_dd"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Главный экран социальной сети -->
+        <activity
+            android:name=".Hub"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Main_dd"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Экран сообщений -->
+        <activity
+            android:name=".Msg"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Main_dd"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Авторизация — стартовое окно приложения -->
+        <activity
+            android:name=".avtorizator"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Main_dd"
+            android:windowSoftInputMode="adjustResize">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+    </application>
+
+</manifest>
+
