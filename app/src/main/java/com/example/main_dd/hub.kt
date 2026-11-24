@@ -115,7 +115,7 @@ fun HubScreen() {
             // ==================================
 
             Text(
-                text = "диалог",
+                text = "диалог > ~ <",
                 color = Color.White,
                 fontSize = 28.sp,
                 fontWeight = FontWeight.Bold,
